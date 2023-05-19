@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #83b4a1;
+	color: white;
+}
+.logo-img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.heading{
+    font-size: 2.4rem;
+    font-family: 'Poppins', sans-serif;
+    color: #f1f1f1;
+}
+
+.navbar-buttons {
+	display: flex;
+	align-items: center;
+}
+
+button {
+	margin-left: 20px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	background-color: #344b96;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #1c2642;
+}
+
+.description{
+    margin-left: 25rem;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	padding: 5px 10px;
+	width: 600px;
+	max-width: 90%;
+	margin: 2.4rem auto;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input[type="text"] {
+	flex: 1;
+	padding: 10px;
+	border: none;
+	border-radius: 20px;
+	background-color: #f1f1f1;
+	font-size: 18px;
+	color: #333;
+}
+
+.textbox{
+    border-color: rgb(29, 29, 29);
+    border-style: solid;
+    border-radius: 1.5rem;
+    border-width: 1.75px;
+    margin: 20px auto;
+    width: 75%;
+    padding: 15px;
+    min-height: 10rem;
+    background-color: #c9c8c8;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Navbar */
+    .logo-img {
+        height: 3rem;
+        width: 3rem;
+    }
+    
+    .heading {
+        font-size: 1.35rem;
+    }
+
+    button {
+        margin-left: 5px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Search bar */
+    .description{
+        margin-left: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 75%;
+        margin: 2rem auto;
+        padding: 20px;
+    }
+
+    .search-bar input[type="text"] {
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .search-bar button[type="submit"] {
+        border-radius: 4px;
+        margin-left: 0;
+    }
+}

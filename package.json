@@ -1,0 +1,24 @@
+{
+  "name": "youtube-summarizer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express.js": "^1.0.0",
+    "hbs": "^4.2.0",
+    "openai": "^3.2.1",
+    "youtube-captions-scraper": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
